@@ -29,7 +29,7 @@ Egy branch a kódnak egy párhuzamos valósága. Többen tudunk dolgozni ugyanaz
 
 
 Branchek:
-![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nobledesktop.com%2Flearn%2Fgit%2Fgit-branches&psig=AOvVaw2c6ORgrrR0B423_eBcZzhi&ust=1637617302393000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJi2jYK2qvQCFQAAAAAdAAAAABAh)
+![alt text](https://www.nobledesktop.com/image/gitresources/git-branches-merge.png)
 
 Ennek egyik előnye, hogy nem törjük el egymás kódjait, nem keletkeznek conflictok.
 
