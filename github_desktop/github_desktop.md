@@ -60,7 +60,7 @@ Az utolsó push és az azóta "lefotózott" pillanatképek, commitok publikálá
 
 ## Egyéb funkciók
 
-### Fetch origin
+### Fetch/Pull
 A távoli szerverről a lokális számítógépre letölti a módosításokat - az adott branchre!
 
 ### Checkout
