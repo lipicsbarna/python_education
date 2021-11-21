@@ -12,3 +12,13 @@ Pl.
 cd sajat_mappastruktura\git\python_education\execute_code
 python3.10 hello_world.py
 ```
+
+És a válasz:
+
+
+```
+----------------------------
+Hello world
+I have run a Python script.
+----------------------------
+```
