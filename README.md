@@ -61,7 +61,7 @@ Az utolsó oldalon érdemes _Add Python 3.10 to PATH_ gombot kipipálni.
 
 ### Honnan tudom, hogy sikerült telepítenem?
 Parancssorba/terminálba beírva az indító parancsot, elindul a Python interaktív shell.
-Ez jó eséllyel a _python3.10_lesz, de lehet _py3_, _py_, vagy _python_ is.
+Ez jó eséllyel a _python3.10_ lesz, de lehet _py3_, _py_, vagy _python_ is.
 
 A dokumentáció következő részein a `python3.10` aliast fogjuk használni, de ha a saját gépen nem ez az alias, akkor értelemszerűen a megfelelőre cseréljük le a saját gépünkön.
 
