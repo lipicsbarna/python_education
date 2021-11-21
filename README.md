@@ -48,8 +48,9 @@ Aki Macintosh/Linux alól telepít, természetesen lehet a megfelelő package ma
 A Download Python3.10 gombra rányomva töltsük le a telepítőt. Az operációs rendszernek megfelelő telepítő varázslót végig kell majd kattintgatni.
 
 Érdemes feljegyezni, hogy hova kerül telepítésre, 
+Windowson pl. a képen is látható minta alapján jó eséllyel ide kerül:
 
-Windowson pl. a képen is látható minta alapján jó eséllyel ide kerül:C:\Users\MyUser\AppData\Local\Programs\Python\Python3.10
+C:\Users\MyUser\AppData\Local\Programs\Python\Python3.10
 
 ![alt text](https://docs.python.org/3/_images/win_installer.png)
 
