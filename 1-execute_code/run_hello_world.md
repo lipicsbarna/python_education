@@ -22,3 +22,8 @@ Hello world
 I have run a Python script.
 ----------------------------
 ```
+
+
+Tehát a következőképp tudunk lefuttatni egy python kódot:
+
+`python_executable filename [parameters]`
