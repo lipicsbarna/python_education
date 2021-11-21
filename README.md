@@ -57,18 +57,41 @@ C:\Users\MyUser\AppData\Local\Programs\Python\Python3.10
 Az utolsó oldalon érdemes _Add Python 3.10 to PATH_ gombot kipipálni.
 
 
-### Honnan tudom, hogy sikerült telepítenem?
-Parancssorba/terminálba beírva az indító parancsot, elindul a Python interaktív shell:
 
+
+### Honnan tudom, hogy sikerült telepítenem?
+Parancssorba/terminálba beírva az indító parancsot, elindul a Python interaktív shell.
+Ez jó eséllyel a _python3.10_lesz, de lehet _py3_, _py_, vagy _python_ is.
+
+Akkor találtuk el a jó parancsot, ha indulás után is azt látjuk, hogy a 3.10-es verzió indult el.
+
+
+
+
+`
 lipicsbarna@Lipics-MacBook-Pro ~ % python3.10
 Python 3.10.0 (v3.10.0:b494f5935c, Oct  4 2021, 14:59:20) [Clang 12.0.5 (clang-1205.0.22.11)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
+`
+
+
+
+
 A legtöbb programozást oktató anyag egy “Hello world” szösszenettel kezdődik, megmutatja, hogy tudjuk kiírni konzolra a szöveget.
+
 Hogy igazán érezzétek, hogy már egy kicsit része vagytok a programozás világának, írjátok be:
-print("Hello world")
+
+
+`print("Hello world")`
+
+
 Ha sikerült jól begépelni, akkor vissza fog köszönni:
->>> print("Hello world")
-Hello world
+
+
+`>>> print("Hello world")
+Hello world`
+
+
 A számítógépen parancssorban (Windows Parancssor, vagy Linux/Mac terminál) lépjünk be abba a mappába, 
 ahova clone-oztuk a repositoryt, pl. (cd C:\Users\MyUser\git\python_education).
