@@ -40,15 +40,20 @@ Aki Macintosh/Linux alól telepít, természetesen lehet a megfelelő package ma
 
 
 
+## Telepítés
+
+
 [Python letöltése](https://www.python.org/downloads/)
 
+A Download Python3.10 gombra rányomva töltsük le a telepítőt. Az operációs rendszernek megfelelő telepítő varázslót végig kell majd kattintgatni.
 
+Érdemes feljegyezni, hogy hova kerül telepítésre, 
 
+Windowson pl. a képen is látható minta alapján jó eséllyel ide kerül:C:\Users\MyUser\AppData\Local\Programs\Python\Python3.10
 
-## Telepítés
-A Download Python3.10 gombra rányomva töltsük le a telepítőt. Az operációs rendszernek megfelelő telepítő varázslót végig kell kattintgatni;
+![alt text](https://docs.python.org/3/_images/win_installer.png)
 
-az utolsó oldalon érdemes _Add Python 3.10 to PATH_ gombot kipipálni.
+Az utolsó oldalon érdemes _Add Python 3.10 to PATH_ gombot kipipálni.
 
 
 ### Honnan tudom, hogy sikerült telepítenem?
