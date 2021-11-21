@@ -1,5 +1,7 @@
 # GitHub Desktop használata
 
+Kódjaink verziózására a GitHubot fogjuk használni. A képzés során és jelen dokumentációban a git működésének csak az alapjait vesszük át.
+
 A git jelenleg a világ legelterjedtebb verziókezelő rendszere.
 
 Feladata, hogy egyszerű parancsokkal tudjunk szinkronizálni, üzembe helyezni, másolni, verziózni kódokat.
