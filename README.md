@@ -104,7 +104,7 @@ Az `exit()` paranccsal lehet kilépni a shellből.
 
 
 Ezután számítógépen parancssorban (Windows Parancssor, vagy Linux/Mac terminál) lépjünk be abba a mappába, 
-ahova clone-oztuk a repositoryt, pl. (cd C:\Users\MyUser\git\python_education).
+ahova clone-oztuk a repositoryt, pl. (`cd C:\Users\MyUser\git\python_education`).
 
 
 Gépeljük be a következőt:
@@ -115,5 +115,9 @@ Gépeljük be a következőt:
 
 Ezzel a paranccsal telepítésre kerülnek a szükséges csomagok.
 
-Ha nem találja, a `pip` parancsot, akkor próbáljuk helyette a `python3.10 -m pip install -r requirements.txt` parancsot.
+Ha nem találja, a `pip` parancsot, akkor próbáljuk helyette a 
+
+`python3.10 -m pip install -r requirements.txt` 
+
+parancsot.
 
