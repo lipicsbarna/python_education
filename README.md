@@ -63,6 +63,8 @@ Az utolsó oldalon érdemes _Add Python 3.10 to PATH_ gombot kipipálni.
 Parancssorba/terminálba beírva az indító parancsot, elindul a Python interaktív shell.
 Ez jó eséllyel a _python3.10_lesz, de lehet _py3_, _py_, vagy _python_ is.
 
+A dokumentáció következő részein a `python3.10` aliast fogjuk használni, de ha a saját gépen nem ez az alias, akkor értelemszerűen a megfelelőre cseréljük le a saját gépünkön.
+
 Akkor találtuk el a jó parancsot, ha indulás után is azt látjuk, hogy a 3.10-es verzió indult el.
 
 
@@ -91,9 +93,27 @@ Hogy igazán érezzétek, hogy már egy kicsit része vagytok a programozás vil
 Ha sikerült jól begépelni, akkor vissza fog köszönni:
 
 
-```>>> print("Hello world")
-Hello world```
+```
+>>> print("Hello world")
+Hello world
+```
+
+Az `exit()` paranccsal lehet kilépni a shellből.
 
 
-A számítógépen parancssorban (Windows Parancssor, vagy Linux/Mac terminál) lépjünk be abba a mappába, 
+
+
+Ezután számítógépen parancssorban (Windows Parancssor, vagy Linux/Mac terminál) lépjünk be abba a mappába, 
 ahova clone-oztuk a repositoryt, pl. (cd C:\Users\MyUser\git\python_education).
+
+
+Gépeljük be a következőt:
+
+
+`pip install -r requirements.txt`
+
+
+Ezzel a paranccsal telepítésre kerülnek a szükséges csomagok.
+
+Ha nem találja, a `pip` parancsot, akkor próbáljuk helyette a `python3.10 -m pip install -r requirements.txt` parancsot.
+
