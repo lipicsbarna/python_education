@@ -28,8 +28,12 @@ Saját branch létrehozása.
 Egy branch a kódnak egy párhuzamos valósága. Többen tudunk dolgozni ugyanazon a kódbázison anélkül, hogy a _main_ módosulna.
 
 
+
+
 Branchek:
 ![alt text](https://www.nobledesktop.com/image/gitresources/git-branches-merge.png)
+
+
 
 Ennek egyik előnye, hogy nem törjük el egymás kódjait, nem keletkeznek conflictok.
 
