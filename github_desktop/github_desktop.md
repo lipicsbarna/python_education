@@ -33,6 +33,8 @@ Egy branch a kódnak egy párhuzamos valósága. Többen tudunk dolgozni ugyanaz
 Branchek:
 ![alt text](https://www.nobledesktop.com/image/gitresources/git-branches-merge.png)
 
+Forrás: [Git branches](https://www.nobledesktop.com/learn/git/git-branches)
+
 
 
 Ennek egyik előnye, hogy nem törjük el egymás kódjait, nem keletkeznek conflictok.
