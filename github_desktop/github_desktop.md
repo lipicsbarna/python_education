@@ -9,3 +9,10 @@ A GitHub a git egy online, ingyenesen (is) használható platformja, itt fogunk 
 Érdemes elolvasni legalább az _about git_ fület, az nagyjából le is fedi az általunk is használandó funkciókat.
 
 Eredeti, angol nyelvű dokumentáció: [git](https://docs.github.com/en/get-started/using-git/about-git).
+
+
+Mi nem fogjuk használni a kurzuson a command line megoldást, helyette a GitHub Desktopban végezzük a verziózást.
+
+A következőképp fog működni egy átlagos eset:
+
+

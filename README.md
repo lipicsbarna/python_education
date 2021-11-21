@@ -18,9 +18,13 @@ majd jelentkezzünk be az előző lépésben létrehozott felhasználóval.
 Érdemes lehet egy külön _git_ mappát létrehozni a számunkra megfelelő helyen a számítógépen.
 
 
-Következő lépésben keressük meg a _clone repository_ gombot, és 
-ezt a repositoryt clone-ozzuk az előzőleg létrehozott _git_ mappába: _https://github.com/lipicsbarna/python_education_
+Következő lépésben keressük meg a _clone repository_ opciót, és 
+ezt a repositoryt clone-ozzuk az előzőleg létrehozott _git_ mappába. Az URL fület kiválasztva adjuk meg ezt a repository URL-t: _https://github.com/lipicsbarna/python_education_
 
+Alatta pedig a Local Path legyen a már említett mappa.
+
+
+[Clone repository in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop)
 
 
 
