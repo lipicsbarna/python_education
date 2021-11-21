@@ -94,7 +94,7 @@ Hogy igazán érezzétek, hogy már egy kicsit része vagytok a programozás vil
 Ha sikerült jól begépelni, akkor vissza fog köszönni:
 
 
-```
+```python
 >>> print("Hello world")
 Hello world
 ```
