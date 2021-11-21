@@ -57,11 +57,12 @@ C:\Users\MyUser\AppData\Local\Programs\Python\Python3.10
 Az utolsó oldalon érdemes _Add Python 3.10 to PATH_ gombot kipipálni.
 
 
+Ha bármi gond felmerül, érdemes lehet esetleg itt körülnézni: [How to install Python](https://realpython.com/installing-python/)
 
 
 ### Honnan tudom, hogy sikerült telepítenem?
 Parancssorba/terminálba beírva az indító parancsot, elindul a Python interaktív shell.
-Ez jó eséllyel a _python3.10_ lesz, de lehet _py3_, _py_, vagy _python_ is.
+Ez jó eséllyel a _python3.10_ vagy _py3.10_ lesz, de lehet _py3_, _py_, vagy _python_ is.
 
 A dokumentáció következő részein a `python3.10` aliast fogjuk használni, de ha a saját gépen nem ez az alias, akkor értelemszerűen a megfelelőre cseréljük le a saját gépünkön.
 
@@ -118,5 +119,10 @@ Ezzel a paranccsal telepítésre kerülnek a szükséges csomagok.
 Ha nem találja, a `pip` parancsot, akkor próbáljuk helyette ezt: 
 
 `python3.10 -m pip install -r requirements.txt` 
+
+
+A pip a Python package managere, segít könnyen és egyszerűen telepíteni a függőségeket.
+
+Bővebben: [pip](https://pip.pypa.io/en/stable/user_guide/)
 
 
