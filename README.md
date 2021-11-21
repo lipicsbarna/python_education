@@ -115,9 +115,8 @@ Gépeljük be a következőt:
 
 Ezzel a paranccsal telepítésre kerülnek a szükséges csomagok.
 
-Ha nem találja, a `pip` parancsot, akkor próbáljuk helyette a 
+Ha nem találja, a `pip` parancsot, akkor próbáljuk helyette ezt: 
 
 `python3.10 -m pip install -r requirements.txt` 
 
-parancsot.
 
