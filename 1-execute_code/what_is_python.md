@@ -261,6 +261,14 @@ state.append(3) # Side effect
 state.valami()
 ```
 
+Ez lenne az ideális:
+```scala
+// Scala
+val state = List(1,2)
+val newState = state :+ 3
+```
+
+Pythonban csak a szemlélettel tudjuk ezt hozni
 ```python
 state = [1,2]
 new_state = state.copy()
@@ -273,8 +281,43 @@ output: [1,2]
 output: [1,2,3]
 ```
 
-```scala
-val state = List(1,2)
-val newState = state :+ 3
+Másik példa:
+
+```python
+def double_us(numbers: list):
+    temp_list = []
+    for num in numbers:
+        temp_list.append(num * 2) # egy másik objektumon módosítunk
+
+    return temp_list
 ```
 
+```scala
+// Scala
+val myList = Seq(1,2,3)
+val doubled = myList.map(x => x * 2) // Egy függvényt (x *  2) adunk meg csak, és rögtön új változóban kapjuk vissza
+ ```
+Utóbbi létezik Pythonban is,csak csúnyább szintaxissal.
+
+
+## Python syntax
+A Python nyelvben a logikai egységeket intendációval formáljuk.
+
+Ez lehet tabulátor, vagy 4 szóköz (utóbbi a preferált a [PEP8](https://www.python.org/dev/peps/pep-0008/) útmutatása alapján)
+
+```python
+x = 5
+y = 7
+
+def kulso_funkcio():
+    print("hi")
+
+    # Ha ebbe a fnkcióba ágyazunk valamit, az megint beljebb kerül:
+    # Ez a funkció csak a kulso_funkcio-ból elérhető, mert logikailag belehelyeztük az indendációval:
+    def belso_funkcio():
+        print("en vagyok belul")
+
+# Ez viszont egy szinten van az első kulso_funkcio-val.
+def masik_kulso_funkcio():
+    print("hello")
+```
