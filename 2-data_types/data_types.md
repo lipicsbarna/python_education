@@ -35,10 +35,14 @@
 * Mutable
 * Duplicate keys are not allowed, duplicate values are
 
+Akkor használjuk, ha név alapján szeretnénk tárolni és elérni valamit.
+
+Az, hogy név alapján visszaadja az értékünk, nagyon gyors lesz.
+
 ```python
 my_dict = {
     'Csuti': 'mutt',
-    'Shae' : 'pitbull,
+    'Shae' : 'pitbull',
     'Boni' : 'bull type mix'
 }
 
@@ -58,6 +62,7 @@ output: Shae is a dog, she is a pitbull
 * Duplicates are allowed
 
 A listben nincsenek kulcsszavak, a sorszámukra tudunk hivatkozni.
+Ha nincs szükségünk kulcsszavakra, viszont szeretnénk egy rendezett csomagot, ami mindig ugyanolyan sorrendben tartalmazza az adatokat, és szeretnénk módosítani a tartalmát, akkor a listet válasszuk. 
 
 
 0-tól kezdjük a számolást, az első elemet a [0] accessorral tudjuk lekérni.
@@ -99,6 +104,9 @@ output: 6
 * Immutable
 * Duplicates are allowed
 
+A tupleben sincsenek kulcsszavak, a sorszámukra tudunk hivatkozni.
+Ha nincs szükségünk kulcsszavakra, viszont szeretnénk egy rendezett csomagot, ami mindig ugyanolyan sorrendben tartalmazza az adatokat, és fontos, hogy ne lehessen módosítani, akkor a tuple-t válasszuk.
+
 ```python
 lotr_tuple = ('The Fellowship of the Ring,', 'The Two Towers', 'The Return of the King')
 
@@ -124,6 +132,11 @@ TypeError: 'tuple' object does not support item assignment
 * Set is mutable, elements are not
 * Duplicates are not allowed
 
+A set rendezetlen, nem tudunk sorszám alapján hivatkozni elemeket.
+Hozzáadni és elvenni lehet, de az elemeken módosítani nem.
+Egy elem nem lehet benne kétszer, és ennek köszönhetően. Villámgyorsan mondja meg, hogy egy elem tagja-e a csomagunknak. 
+
+
 ```python
 dogs_set = {'beagle', 'american pitbull terrier', 'fox terrier', 'puli', 'pumi', 'napolitan'}
 print(dogs_set)
@@ -141,8 +154,38 @@ print(dogs_set)
 # puli is not there anymore
 output: {'american pitbull terrier', 'beagle', 'fox terrier', 'napolitan', 'pumi'}
 
+# tartalmazza-e
+'beagle' in dogs_set
+output: True
+
 ```
 
 
+## boolean
 
+Értéke True/False lehet.
 
+```python
+my_bool = True
+if my_bool:
+    print("True!")
+else:
+    print("False!")
+
+output: True!
+```
+
+## custom types
+
+Mindegyik beépített típus egy primitive class a Pythonban. Ez implikálja, hogy az osztályainkat is kezelhetjük típusként.
+
+```python
+class Patient():
+    
+    def __init__(self, first_name, last_name, date_of_birth, diagnosis, treatment_code):
+        self.first_name = first_name.capitalize()
+        self.last_name = last_name.capitalize()
+        self.date_of_birth = datetime.datetime.strptime(date_of_birth, 'yyyy-MM-dd')
+        self.diagnosis = diagnosis
+        self.treatment_code = treatment_code
+```
