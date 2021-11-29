@@ -40,4 +40,22 @@ A terminálon keressük ki ezt a részt, majd valamelyik http-vel kezdődő link
 Amikor végeztünk, Ctrl+C, Ctrl+C billentyűkombinációval (igen, kétszer) le tudjuk zárni a Jupyter szervert.
 
 
-# TODO - Verziókezelés
+# A GitLab képes a GitHubbal együtműködni
+
+## GitHub Personal access token
+
+Szükség lesz egy Personal access token létrehozására, mert a GitHub nem támogatja már a user+password bejelentkezést más eszközökről (a GitHub Desktop alkalmazást leszámítva).
+
+[Így tudunk egy personal access tokent létrehozni](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
+* GitHubba szükséges belépni
+* * Settings 
+* * * Developer settings
+* * * * Personal access token
+* * * * Generate new token
+
+Elegendő a repo-t bepipálni.
+
+Ha elkészült, a felhasználónevünkkel és ezzel a tokennel tudunk majd Jupyterlabból belépni.
+
+![alt text](https://raw.githubusercontent.com/jupyterlab/jupyterlab-git/master/docs/figs/preview.gif)
