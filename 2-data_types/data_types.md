@@ -115,7 +115,7 @@ print(lotr_tuple[0])
 output: The Fellowship of the Ring
 
 # Cannot change an element
-lotr_tuple[0] = 'Rambo II'
+lotr_tuple[0] = 'Rambo III'
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 ...code.py in <module>
