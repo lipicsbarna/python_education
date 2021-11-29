@@ -68,6 +68,10 @@ Ha bármi gond felmerül, érdemes lehet esetleg itt körülnézni: [How to inst
 Parancssorba/terminálba beírva az indító parancsot, elindul a Python interaktív shell.
 Ez jó eséllyel a _python3.10_ vagy _py3.10_ lesz, de lehet _py3_, _py_, vagy _python_ is.
 
+
+(Windowson a Start menü keresőjébe ha beírjuk, hogy _cmd_, vagy Paranccsor, fel fogja ajánlani számunkra, hogy megnyissuk. Linux és Mac felhasználóknak a terminál általában elérhetőbb helyen található.)
+
+
 A dokumentáció következő részein a `python3.10` aliast fogjuk használni, de ha a saját gépen nem ez az alias, akkor értelemszerűen a megfelelőre cseréljük le a saját gépünkön.
 
 Akkor találtuk el a jó parancsot, ha indulás után is azt látjuk, hogy a 3.10-es verzió indult el.
