@@ -57,7 +57,7 @@ val myString: String = "Hello World"
 
 Pythonban ez nincs kikényszerítve:
 ```python
-my_string = "Hello World
+my_string = "Hello World"
 ```
 
 Bár a nyelv lehetőséget ad arra, hogy a kód olvasójának, szövegszerkesztőnek segítsünk a type hintek segítségével:
