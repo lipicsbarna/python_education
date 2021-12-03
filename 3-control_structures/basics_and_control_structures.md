@@ -52,6 +52,8 @@ class Cat:
     lifes: int
 
 my_cat: Cat = Cat("cica", "9")
+
+nothing = None # null
 ```
 
 ### Type casting
@@ -224,3 +226,146 @@ else:
         print("Egy kövér ember!")
 
 ```
+Egyszerű feltételekkel egy sorba is megfogalmazhatunk állításokat:
+```python
+x = 'small' if y < 10 else 'big'
+```
+
+### While loop
+
+Amikor szeretnénk több körben hasonló dolgokat futtatni, akkor használjuk az iterációt. Az iteráció egyik fajtája Pythonban (is) a while loop:
+
+```
+while statement is True:
+    do something
+```
+Ez annyit tesz, hogy amíg a _statement_ igaz, addig újra és újra le fogja futtatni a _do something_ részt egészen addig, amíg a statement nem lesz hamis. 
+
+Igen, ha mindig igaz, akkor soha nem áll le. Ez nem mindig baj, de ha nem szándékos, akkor galibát tud okozni.
+
+```python
+while True:
+    print("fekvő nyolcas")
+```
+Igen, ez a végtelenségig, vagy amíg a számítógép erőforrásai engedik, fut.
+
+Tipikusan valahogy így szoktuk használni:
+```python
+counter = 0
+while counter < 11:
+    print(counter)
+    counter += 1 # Do you remember what does += do?
+# If we forget to raise the counter, it will run forever.
+```
+
+Például végig tudunk iterálni egy listán az indexei alapján:
+
+```python
+my_list = ['butter', 'milk', 'bread', 'chocolate','chocolate','beer']
+c = 0
+while c < len(my_list): # c is smaller than the LENgth of the list
+    print(f"{c} - {my_list[c]}")
+```
+
+```
+output: 
+0 - butter
+1 - milk
+2 - bread
+3 - chocolate
+4 - chocolate
+5 - beer
+```
+
+Ha bizonyos feltételek fennállásakor szeretnénk kihagyni egy elemre az akciónk futtatását, akkor a _continue_ expressionnel tudjuk ezt megtenni:
+
+```python
+# Don't print my bass, so that my wife doesn't know
+my_guitars = ['electric', 'bass', 'acoustic', '12-string']
+
+c = 0
+while c < len(my_guitars):
+    if my_guitars[c] == 'bass':
+        c += 1
+        continue
+    else:
+        print(my_guitars[c])
+        c += 1
+```
+
+Ha a loop futtatását szeretnénk abbahagyni, ha bizonyos feltételek fennállnak, akkor a _break_ kifejezésre lesz szükségünk. 
+
+```python
+# If you bought 10 beers but want to stop at 3
+num_beers = 0
+while num_beers < 10:
+    if num_beers == 3:
+        print("That's enough!")
+        break
+    else:
+        print(num_beers)
+        num_beers += 1
+```
+
+### For loop
+Ezzel a típusú looppal tudunk végigiterálni egy iterable típusú változó elemein (pl. list, set, tuple)
+
+```
+for element in iterable:
+    do something with the element
+```
+
+```python
+my_list = ['butter', 'milk', 'bread', 'chocolate','chocolate','beer']
+for food in my_list:
+    print("food")
+```
+
+Itt nincs szükség counterre, anélkül végig tudunk iterálni a listán.
+A _continue_ és _break_ kifejezések működnek az iterálás ezen formájában is.
+
+### Pass
+Üres kifejezés, nem csinál semmit.
+```python
+def oh_time_pass():
+    pass
+
+oh_time_pass()
+# nothing in the world happens
+```
+
+### List comprehension
+Hasonló a for loophoz, de abban különbözik, hogy míg a for loop nem ad vissza értéket, itt a visszatérési érték egy lista lesz.
+
+Teljesítményben gyorsabb, mint egy for loop, illetve _pure function_, azaz a funkcionális paradigmába illeszthető.
+
+```python
+my_list = ['butter', 'milk', 'bread', 'chocolate','chocolate','beer']
+list_comprehensioned = [food.capitalize() for food in my_list]
+print(list_comprehensioned)
+```
+```
+output:
+['Butter', 'Milk', 'Bread', 'Chocolate', 'Chocolate', 'Beer']
+```
+Ez az egy sor for looppal így nézne ki:
+```python
+my_list = ['butter', 'milk', 'bread', 'chocolate','chocolate','beer']
+my_new_list = []
+for food in my_list:
+    my_new_list.append(food.capitalize())
+```
+While looppal egy fokkal elegánsabb:
+```python
+my_list = ['butter', 'milk', 'bread', 'chocolate','chocolate','beer']
+c = 0
+while c < len(my_list):
+    my_list[c] = my_list[c].capitalize()
+    c += 1
+```
+
+If-else feltételekkel is gazdagítható:
+```python
+[x for x in iterable if x % 2 == 0] # Returns only even numbers
+```
+
