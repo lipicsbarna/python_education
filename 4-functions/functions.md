@@ -95,17 +95,35 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'inner_function' is not defined
 ```
-*args - Amikor ugyanazt szeretnénk csinálni a paraméterekkel, logikailag egyforma típusúak, és részünkről lehet bármennyi belőle.
+*args - Amikor ugyanazt szeretnénk csinálni a paraméterekkel, logikailag egyforma típusúak, és részünkről lehet bármennyi belőle. A *args szintaxist úgy hívjuk, hogy list unpacking.
 ```python
 def friends(*args):
     print("They are all my friends:")
     print(", ".join(args))
 
+# They are the same
 friends("Santa", "Geez", "East-Coast Rabbit")
+friends(*["Santa", "Geez", "East-Coast Rabbit"])
 ```
 
 ```
 output: 
 They are all my friends:
 Santa, Geez, East-Coast Rabbit
+```
+
+Ha szeretnénk fogadni olyan paramétereket, aminek nemcsak az értéke, de a neve is fontos, akkor a **kwargs-okat is bevethetjük:
+```python
+def print_dogs_with_age(**kwargs):
+    for dog, age in kwargs.items():
+        print(f"{dog} is {age} years old.")
+
+print_dogs_with_age(csuti=13, boni=5, shae=8)
+```
+
+```
+output:
+csuti is 13 years old.
+boni is 5 years old.
+shae is 8 years old.
 ```
