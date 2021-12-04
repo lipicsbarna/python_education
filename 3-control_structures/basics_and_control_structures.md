@@ -51,7 +51,7 @@ class Cat:
     name: str,
     lifes: int
 
-my_cat: Cat = Cat("cica", "9")
+my_cat: Cat = Cat("cica", 9)
 
 nothing = None # null
 ```
