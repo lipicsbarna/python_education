@@ -127,3 +127,69 @@ csuti is 13 years old.
 boni is 5 years old.
 shae is 8 years old.
 ```
+
+### Lambda functions
+
+A lambda funkciók név nélküli, egyszer használatos funkciók; a matematikai függvények analógiájaként értelmezhetők. Használatuk csak néhány esetben előnyös, legtöbbször kiváltható mással. Funkcionális programozásra (is) tervezett nyelvekben (pl. Scala) gyakran használt megközelítés.
+
+```python
+(lambda x: x**2)(3) # 9
+
+# One of the use cases may be pandas.DataFrame.apply for vectorized processes
+
+df.apply(lambda x: x.upper())
+```
+
+```scala
+// Scala
+myIterable.map( x => x.upperCase )
+```
+
+### Default values
+Megadhatjuk egy funkciónak, hogy amennyiben nem kap paramétert, milyen alapértelmezett értékeket használjon:
+
+```python
+def print_celsius(degree, degree_type='C'):
+    if degree_type == 'C':
+        print(degree)
+    elif degree_type == 'F':
+        degree = (5/9) * (degree - 32)
+        print(degree)
+
+print_celsius(32)
+```
+
+```
+output: 32
+```
+
+```python
+print_celsius(88, 'F')
+```
+
+```
+output: 31.111111111111114
+```
+
+### Return values
+Mivel nem csak a konzolra szeretnénk szövegeket kiírni, ezért szükséges megismerni a return value fogalmát. A funkciók vissza tudnak nekünk adni értékeket, amelyeket mi a későbbiekben tovább tudunk használni. Hasonlóan működik ahhoz, mint amikor egy változónak adunk értéket:
+
+```x = 5```
+
+Ugyanezt el tudjuk érni egy funkcióval is:
+
+```python
+def return_five():
+    return 5
+
+x = return_five()
+
+# A more realistic example
+
+def sum_the_doubles(numbers: list):
+    return sum([num * 2 for num in numbers])
+
+x = sum_the_doubles([1,2,3,4,5])
+print(x)
+output: 30
+```
