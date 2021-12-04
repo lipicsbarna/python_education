@@ -265,6 +265,7 @@ my_list = ['butter', 'milk', 'bread', 'chocolate','chocolate','beer']
 c = 0
 while c < len(my_list): # c is smaller than the LENgth of the list
     print(f"{c} - {my_list[c]}")
+    c += 1
 ```
 
 ```
