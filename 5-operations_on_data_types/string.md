@@ -52,3 +52,16 @@ print("hello".capitalize()) # Hello
 print("hello".upper()) # HELLO
 print("HELLO".swapcase()) # hello
 ```
+
+
+### Splitting
+Tudunk például listát készíteni stringekből egy adott delimiter string mentén:
+```python
+delimiter = ","
+my_string = "Pavarotti,Domingo,Carreras,del Monaco,Björling"
+print(my_string.split(delimiter))
+```
+
+```
+Output: ['Pavarotti', 'Domingo', 'Carreras', 'del Monaco', 'Björling']
+```
