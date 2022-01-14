@@ -110,3 +110,31 @@ print(my_list * 3)
 ```
 Output: ['choc', 'banana', 'peanut butter', 'choc', 'banana', 'peanut butter', 'choc', 'banana', 'peanut butter']
 ```
+Listet össze lehet fűzni stringgé:
+```python
+my_list = ['choc', 'banana', 'peanut butter']
+my_sweets = " and ".join(my_list)
+print(f"My favourite sweets are {my_sweets}.")
+```
+
+```
+Output: My favourite sweets are choc and banana and peanut butter.
+```
+SQL-ek jó módszer lehet
+```python
+needed_columns = ['id', 'dog_name', 'dog_age', 'breed']
+filter_ids = [1, 5, 77, 87]
+filter_ids_str = ",".join([str(idx) for idx in filter_ids])
+print(f"""
+SELECT {",".join(needed_columns)}
+FROM dogs_table
+WHERE id in ({filter_ids_str})
+""")
+```
+
+```
+Output:
+SELECT id,dog_name,dog_age,breed
+FROM dogs_table
+WHERE id in (1,5,77,87)
+```
