@@ -120,7 +120,7 @@ print(f"My favourite sweets are {my_sweets}.")
 ```
 Output: My favourite sweets are choc and banana and peanut butter.
 ```
-SQL-ek jó módszer lehet
+SQL-ek dinamikus összeállítására jó módszer lehet:
 ```python
 needed_columns = ['id', 'dog_name', 'dog_age', 'breed']
 filter_ids = [1, 5, 77, 87]
