@@ -138,3 +138,10 @@ SELECT id,dog_name,dog_age,breed
 FROM dogs_table
 WHERE id in (1,5,77,87)
 ```
+
+Meg tudjuk vizsgálni, hogy egy objektumot tartalmaz-e a list:
+
+```python
+my_list = ['choc', 'banana', 'peanut butter']
+'choc' in my_list # True
+```
